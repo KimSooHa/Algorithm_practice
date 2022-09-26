@@ -24,6 +24,7 @@ public class Position implements Comparable<Position> {
 	}
 
 
+	
 	// X축, Y축 순서대로 정렬
 	@Override
 	public int compareTo(Position other) {
