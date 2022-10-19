@@ -63,7 +63,9 @@ public class Practice2 {
 		
 		while(start < end) {
 			int mid = (start + end) / 2;
-			if(arr[mid] > target)	// target에 해당하는 개수를 계산해야 하므로 target과 같으면 보다 큰 인덱스로 가게 비교
+
+			// target에 해당하는 개수를 계산해야 하므로 target과 같으면 보다 큰 인덱스로 가게 비교
+			if(arr[mid] > target)	
 				end = mid;
 			else
 				start = mid + 1;
