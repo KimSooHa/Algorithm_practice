@@ -1,8 +1,8 @@
-package bfs;
+package dfs;
 
 import java.util.ArrayList;
 
-public class Practice2 {
+public class Practice3 {
 	// 타겟넘버(프로그래머스)
 	// 특정 수를 음수로 바꿔 타겟을 찾기
 

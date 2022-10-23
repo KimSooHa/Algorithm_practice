@@ -10,8 +10,6 @@ import java.util.StringTokenizer;
 
 
 public class Practice1 {
-	// 숨바꼭질
-
 	// 숨바꼭질(다익스트라 알고리즘)
 	
 		// 헛간 갯수(n), 통로 갯수(m)
