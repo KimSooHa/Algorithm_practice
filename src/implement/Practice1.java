@@ -23,6 +23,54 @@ public class Practice1 {
 	
 	public static StringTokenizer st;
 	
+	public static class Position {
+
+		private int x;
+		private int y;
+		
+		
+		public Position(int x, int y) {
+			this.x = x;
+			this.y = y;
+		}
+
+
+		public int getX() {
+			return x;
+		}
+
+
+		public int getY() {
+			return y;
+		}
+		
+		
+	}
+	
+	public static class Node {
+
+		private int time;
+		private char direction;
+		
+		
+		public Node(int time, char direction) {
+			this.time = time;
+			this.direction = direction;
+		}
+
+
+		public int getTime() {
+			return time;
+		}
+
+
+		public char getDirection() {
+			return direction;
+		}
+		
+		
+	}
+	
 	public static void main(String args[]) throws NumberFormatException, IOException {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
