@@ -8,7 +8,7 @@ public class Practice5 {
 	// 문자열 재정렬
 	
 	public static String str;	// 입력받는 문자
-	public static ArrayList<Character> result = new ArrayList<>();	// 문자 저장할 리스
+	public static ArrayList<Character> result = new ArrayList<>();	// 문자 저장할 리스트 
 	public static int value = 0;	// 따로 더하는 숫자
 	
 	
@@ -33,7 +33,7 @@ public class Practice5 {
 			System.out.print(result.get(i));
 		}
 		
-		// 숫자가 하나라도 존재하는 경우 가장 뒤에 출
+		// 숫자가 하나라도 존재하는 경우 가장 뒤에 출력 
 		if(value != 0)
 			System.out.print(value);
 	}	// end of main
