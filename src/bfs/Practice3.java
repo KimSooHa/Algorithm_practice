@@ -40,9 +40,6 @@ public class Practice3 {
         int[][] graph = new int[n+1][m+1];
         
         
-        if(maps[n-1][m] == 0 && maps[n][m-1] == 0)
-        	return answer;
-        
         for(int i=0; i<maps.length; i++)
         	Arrays.fill(graph[i], -1);
         
@@ -64,6 +61,7 @@ public class Practice3 {
         		
         		if(0<= nx && nx <= n && 0<= ny && ny <= m && maps[nx][ny] == 1 && graph[nx][ny] == -1) {
                     graph[nx][ny] = graph[x][y] + 1;
+                    
                     if(nx != n || ny != m)
                         q.offer(new Position(nx, ny));
         		}
@@ -71,8 +69,7 @@ public class Practice3 {
         	
         }
         
-        answer = graph[n][m];
-        
+	   answer = graph[n][m];
         
         return answer;
     }
