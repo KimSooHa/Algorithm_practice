@@ -35,11 +35,11 @@ public class Practice23 {
 		int[][] arr = new int [n][m];
 		xy[x][y] = 1;	// 현재 위치한 좌표 방문 처리
 		
+		// 게임 맵 채우기
 		for (int i = 0; i < n; i++) {
 			st = new StringTokenizer(br.readLine());
-			for (int j = 0; j < m; j++) {
-				arr[i][j] = Integer.parseInt(st.nextToken());
-			}
+			for (int j = 0; j < m; j++) 
+				arr[i][j] = Integer.parseInt(st.nextToken());	
 		}
 		// 8가지 방향에 대하여 각 위치로 이동이 가능한지 확인
 		int cnt = 1;// 방문수
@@ -48,9 +48,10 @@ public class Practice23 {
 		while(true) {
 			// 왼쪽으로 회전
 			turnLeft();
+			// 현재위치에서 이동방향으로 이동하기
 			int nx = x + dx[d];
 			int ny = y + dy[d];
-			
+			// 회전한 이후 정면에 가보지 않은 칸이 존재하는 경우 이동
 			if(xy[nx][ny] == 0 && arr[nx][ny] == 0) {
 				xy[nx][ny] = 1;
 				x = nx;
@@ -59,15 +60,18 @@ public class Practice23 {
 				turnTime = 0;
 				continue;
 			}
+			// 회전한 이후 정면에 가보지 않은 칸이 없거나 바다인 경우
 			else
 				turnTime++;
+			// 네 방향 모두 갈 수 없는 경우
 			if(turnTime == 4) {
 				nx = x - dx[d];
 				ny = y - dy[d];
+				// 뒤로 갈 수 있다면 이동
 				if(arr[nx][ny] == 0) {
 					x = nx;
 					y= ny;					
-				} else break;
+				} else break;	// 뒤가 바다로 막혀있는 경우 
 				
 				turnTime = 0;
 			}
