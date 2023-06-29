@@ -59,7 +59,6 @@ public class Practice10 {
 			}
 		}
 		return -1;
-		
 	}
 	
 }	// end of class
