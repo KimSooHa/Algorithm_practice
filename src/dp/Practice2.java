@@ -12,7 +12,7 @@ public class Practice2 {
 		
 
 	public static void main(String[] args) throws IOException {
-		
+		 
 		Scanner sc = new Scanner(System.in);
 		n = sc.nextInt();
 		
