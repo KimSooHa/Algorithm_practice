@@ -4,15 +4,14 @@ public class Practice16 {
 	// 푸드 파이트 대회 (프로그래머스)
 
 	public static String solution(int[] food) {
-		String answer = "";
-
-		for (int i = 0; i < food.length; i++)
-			food[i] /= 2;
+		String answer = "";			
 
 		for (int i = 0; i < food.length; i++) {
+			food[i] /= 2;
 			for (int j = 0; j < food[i]; j++)
 				answer += i;
 		}
+		
 		answer += "0";
 
 		for (int i = food.length - 1; i >= 0; i--) {
