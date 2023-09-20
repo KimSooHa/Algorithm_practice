@@ -20,9 +20,7 @@ public class Practice18 {
 					li.add(i);
 		}
 
-		int[] answer = {};
-		answer = li.stream().mapToInt(i -> i).toArray();
-		return answer;
+		return li.stream().mapToInt(i -> i).toArray();
 	}
 
 	public static ArrayList<ArrayList<Integer>> parseString(String s) {
