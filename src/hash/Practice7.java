@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Practice7 {
-	// 완주하지 못한 선수(프로그래머스 lv1)
+	// 대충 만든 자판(프로그래머스 lv1)
 
 	public static int[] solution(String[] keymap, String[] targets) {
         int[] answer = new int[targets.length];
