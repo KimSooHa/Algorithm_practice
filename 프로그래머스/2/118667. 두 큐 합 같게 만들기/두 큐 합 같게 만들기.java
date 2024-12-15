@@ -18,7 +18,8 @@ class Solution {
         int work = 0;
         int cnt = 0;
         while(q1t != q2t) {
-            if(cnt >= queue1.length * 3 - 3)
+            // 두 배열의 길이 합 * 2 => 모든 원소들이 원점으로 돌아옴
+            if(cnt >= queue1.length * 2 * 2)
                 return answer;
             
             if(q1t > q2t) {
