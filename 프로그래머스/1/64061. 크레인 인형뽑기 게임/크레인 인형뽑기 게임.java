@@ -14,7 +14,6 @@ class Solution {
                         answer += 2;
                     } else    
                         basket.push(board[i][move]);
-                    
                     board[i][move] = 0;
                     break;
                 }
