@@ -57,22 +57,24 @@ class Solution {
         	if(ext.equals(dataType[i]))
         		idx = i;
         }
+        
         List<Data> list = new ArrayList<>();
+        
         for(int i=0; i<data.length; i++) {
         	if(data[i][idx] < val_ext)
-        		list.add(new Data(data[i][0], data[i][1], data[i][2], data[i][3]));
+       		list.add(new Data(data[i][0], data[i][1], data[i][2], data[i][3]));
         }
         
         Collections.sort(list);
         
-        int[][] answer = new int[list.size()][4];
+        int[][] answer = new int[list.size()][4];        
         
-        for(int i=0; i<list.size(); i++) {
-        	answer[i][0] = list.get(i).getCode();
-        	answer[i][1] = list.get(i).getDate();
-        	answer[i][2] = list.get(i).getMaximum();
-        	answer[i][3] = list.get(i).getRemain();
-        }
+       for(int i=0; i<list.size(); i++) {
+       	answer[i][0] = list.get(i).getCode();
+       	answer[i][1] = list.get(i).getDate();
+       	answer[i][2] = list.get(i).getMaximum();
+       	answer[i][3] = list.get(i).getRemain();
+       }
         
         return answer;
     }
